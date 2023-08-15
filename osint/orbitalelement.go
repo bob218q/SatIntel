@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"github.com/iskaa02/qalam/gradient"	
 )
-
 func OrbitalElement() {
 	options, _ := ioutil.ReadFile("txt/orbital_element.txt")
 	opt,_:=gradient.NewGradient("#1179ef", "cyan")
