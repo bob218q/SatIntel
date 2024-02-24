@@ -43,7 +43,6 @@ os.Setenv("SPACE_TRACK_USERNAME", "username")
 os.Setenv("SPACE_TRACK_PASSWORD", "password")
 os.Setenv("N2YO_API_KEY", "api-key")
 ```
-
 To build from source, you will need Go installed.
 
 ```bash
@@ -51,7 +50,6 @@ $ export GO111MODULE=on
 $ go get ./...
 $ go run main.go
 ```
-
 ### APIs Used
 - [Space Track](https://space-track.org): Retrieve Satellite Catalog and TLE Information
 - [N2YO](https://n2yo.com/api): Retrieve Passes Predictions
