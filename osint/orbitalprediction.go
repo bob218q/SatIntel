@@ -259,7 +259,6 @@ func PrintVisualPass (pass Pass, last bool) {
 		fmt.Println(color.Ize(color.Purple, "╠═════════════════════════════════════════════════════════════╣"))
 	}
 }
-
 func PrintRadioPass (pass RadioPass, last bool) {
 	fmt.Println(color.Ize(color.Purple, GenRowString("Start Azimuth", fmt.Sprintf("%f", pass.StartAz))))
 	fmt.Println(color.Ize(color.Purple, GenRowString("Start Azimuth Compass", pass.StartAzCompass)))
