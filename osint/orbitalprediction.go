@@ -10,7 +10,6 @@ import (
 	"net/http"
 	"encoding/json"
 )
-
 func OrbitalPrediction() {
 	options, _ := ioutil.ReadFile("txt/orbital_prediction.txt")
 	opt,_:=gradient.NewGradient("#1179ef", "cyan")
@@ -25,7 +24,6 @@ func OrbitalPrediction() {
 
 	return
 }
-
 func GetVisualPrediction() {
 	selection := SatelliteSelection()
 	if selection.norad == "" {
@@ -71,7 +69,6 @@ func GetVisualPrediction() {
     if err != nil {
         fmt.Println(err)
     }
-
 	fmt.Println(color.Ize(color.Purple, "\n╔═════════════════════════════════════════════════════════════╗"))
 	fmt.Println(color.Ize(color.Purple, "║                    Satellite Information                    ║"))
 	fmt.Println(color.Ize(color.Purple, "╠═════════════════════════════════════════════════════════════╣"))
@@ -95,7 +92,6 @@ func GetVisualPrediction() {
 
 	return
 }
-
 func GetRadioPrediction() {
 	selection := SatelliteSelection()
 	if selection.norad == "" {
@@ -165,7 +161,6 @@ func GetRadioPrediction() {
 
 	return
 }
-
 func SatelliteSelection() SatelliteSelectionType {
 	options, _ := ioutil.ReadFile("txt/orbital_element.txt")
 	opt,_:=gradient.NewGradient("#1179ef", "cyan")
@@ -264,7 +259,6 @@ func PrintVisualPass (pass Pass, last bool) {
 		fmt.Println(color.Ize(color.Purple, "╠═════════════════════════════════════════════════════════════╣"))
 	}
 }
-
 
 func PrintRadioPass (pass RadioPass, last bool) {
 	fmt.Println(color.Ize(color.Purple, GenRowString("Start Azimuth", fmt.Sprintf("%f", pass.StartAz))))
